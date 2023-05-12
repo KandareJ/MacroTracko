@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/MacroTracko/static/css/main.754ebb54.css",
+    "main.js": "/MacroTracko/static/js/main.1fca9ba8.js",
+    "service-worker.js": "/MacroTracko/service-worker.js",
+    "index.html": "/MacroTracko/index.html",
+    "main.754ebb54.css.map": "/MacroTracko/static/css/main.754ebb54.css.map",
+    "main.1fca9ba8.js.map": "/MacroTracko/static/js/main.1fca9ba8.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.754ebb54.css",
+    "static/js/main.1fca9ba8.js"
+  ]
+}
