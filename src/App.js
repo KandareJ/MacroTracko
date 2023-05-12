@@ -1,26 +1,33 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { useSelector } from "react-redux";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+import Topbar from "./components/Topbar";
+import ProfileModal from "./components/ProfileModal";
+import AddFoodModal from "./components/AddFoodModal";
+import AddWaterModal from "./components/AddWaterModal";
+import MacroTable from "./components/MacroTable";
+import Charts from "./components/Charts";
+
+const App = () => {
+    const modals = useSelector(state => state.modals);
+
+    return (
+        <>
+            <Topbar />
+            <ProfileModal open={modals.profile}/>
+            <AddFoodModal open={modals.food} />
+            <AddWaterModal open={modals.water} />
+            
+            <div style={{padding: 10, paddingTop: 20}}>
+                <div>
+                    <Charts />
+                </div>
+                <div style={{paddingTop: 50}}>
+                    <MacroTable />
+                </div>
+            </div>
+        </>
+    );
+};
 
 export default App;
