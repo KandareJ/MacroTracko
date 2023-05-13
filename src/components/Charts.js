@@ -8,16 +8,15 @@ const Charts = () => {
     const water = useSelector(state => state.water);
     const food = useSelector(state => state.food);
 
-    let fat = 0, carbs = 0, protein = 0, calories = 0;
+    let fat = 0, carbs = 0, protein = 0;
 
     food.map((item) => {
         const multiplier = item.portionSize / item.servingSize;
         fat += item.fat * multiplier;
         carbs += item.carbs * multiplier;
         protein += item.protein * multiplier;
+        return protein;
     });
-
-    calories = fat * 9 + carbs * 4 + protein * 4;
 
     const chart = (color, label, remaining, consumed) => {
         const data = [

@@ -69,8 +69,8 @@ const ProfileModal = ({ open }) => {
                             value={height}
                             onChange={(e) => {setHeight(e.target.value)}}
                             step={1}
-                            min={42}
-                            max={90}
+                            min={60}
+                            max={78}
                         />
                     </AccordionDetails>
                 </Accordion>
@@ -83,8 +83,8 @@ const ProfileModal = ({ open }) => {
                             value={weight}
                             onChange={(e) => {setWeight(e.target.value)}}
                             step={1}
-                            min={90}
-                            max={350}
+                            min={100}
+                            max={250}
                         />
                     </AccordionDetails>
                 </Accordion>
@@ -97,8 +97,8 @@ const ProfileModal = ({ open }) => {
                             value={age}
                             onChange={(e) => {setAge(e.target.value)}}
                             step={1}
-                            min={15}
-                            max={80}
+                            min={18}
+                            max={60}
                         />
                     </AccordionDetails>
                 </Accordion>
