@@ -111,17 +111,17 @@ const AddFoodModal = ({ open }) => {
                         }} 
                         renderInput={(params) => <TextField {...params} variant="outlined" label="Food" value={food} onChange={(e) => {setFood(e.target.value)}} />} 
                     />
-                    <TextField variant="outlined" label="Fat per Serving" value={fat} onChange={(e) => {if (isNumberOrEmpty(e.target.value))setFat(e.target.value)}} />
-                    <TextField variant="outlined" label="Carbs per Serving" value={carbs} onChange={(e) => {if (isNumberOrEmpty(e.target.value))setCarbs(e.target.value)}} />
-                    <TextField variant="outlined" label="Protein per Serving" value={protein} onChange={(e) => {if (isNumberOrEmpty(e.target.value))setProtein(e.target.value)}} />
+                    <TextField variant="outlined" inputProps={{ inputMode: "numeric" }} label="Fat per Serving" value={fat} onChange={(e) => {if (isNumberOrEmpty(e.target.value))setFat(e.target.value)}} />
+                    <TextField variant="outlined" inputProps={{ inputMode: "numeric" }} label="Carbs per Serving" value={carbs} onChange={(e) => {if (isNumberOrEmpty(e.target.value))setCarbs(e.target.value)}} />
+                    <TextField variant="outlined" inputProps={{ inputMode: "numeric" }} label="Protein per Serving" value={protein} onChange={(e) => {if (isNumberOrEmpty(e.target.value))setProtein(e.target.value)}} />
                     
                     <Stack direction="row" spacing={1}>
-                        <TextField variant="outlined" label="Serving Size" value={servingSize} onChange={(e) => {if (isNumberOrEmpty(e.target.value))setServingSize(e.target.value)}} />
+                        <TextField variant="outlined" inputProps={{ inputMode: "numeric" }} label="Serving Size" value={servingSize} onChange={(e) => {if (isNumberOrEmpty(e.target.value))setServingSize(e.target.value)}} />
                         {renderUnit()}
                     </Stack>
 
                     <Stack direction="row" spacing={1}>
-                        <TextField variant="outlined" label="Portion Size" value={portionSize} onChange={(e) => {if (isNumberOrEmpty(e.target.value))setPortionSize(e.target.value)}} />
+                        <TextField variant="outlined" inputProps={{ inputMode: "numeric" }} label="Portion Size" value={portionSize} onChange={(e) => {if (isNumberOrEmpty(e.target.value))setPortionSize(e.target.value)}} />
                         {renderUnit()}
                     </Stack>
                 </Stack>
