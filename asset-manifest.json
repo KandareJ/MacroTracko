@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/MacroTracko/static/css/main.754ebb54.css",
-    "main.js": "/MacroTracko/static/js/main.c3e43103.js",
+    "main.js": "/MacroTracko/static/js/main.0ac41afb.js",
     "service-worker.js": "/MacroTracko/service-worker.js",
     "index.html": "/MacroTracko/index.html",
     "main.754ebb54.css.map": "/MacroTracko/static/css/main.754ebb54.css.map",
-    "main.c3e43103.js.map": "/MacroTracko/static/js/main.c3e43103.js.map"
+    "main.0ac41afb.js.map": "/MacroTracko/static/js/main.0ac41afb.js.map"
   },
   "entrypoints": [
     "static/css/main.754ebb54.css",
-    "static/js/main.c3e43103.js"
+    "static/js/main.0ac41afb.js"
   ]
 }
