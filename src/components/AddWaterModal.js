@@ -18,7 +18,7 @@ const AddWaterModal = ({ open }) => {
     const [water, setWater] = React.useState("");
 
     const isNumberOrEmpty = (input) => {
-        return input.match(/^(\s*|\d+)$/);
+        return input.match(/^[0-9]*\.{0,1}[0-9]*$/);
     };
 
     const handleClose = () => {
@@ -45,7 +45,7 @@ const AddWaterModal = ({ open }) => {
                 <Typography variant="subtitle">Enter the amount of water you drank in ounces to track it.</Typography>
                 
                 <Stack spacing={1.5} style={{paddingTop: 20}}>
-                    <TextField variant="outlined" inputProps={{ inputMode: "numeric" }} label="Amount in oz" value={water} onChange={(e) => {if (isNumberOrEmpty(e.target.value))setWater(e.target.value)}} />
+                    <TextField variant="outlined" inputProps={{ inputMode: "decimal" }} label="Amount in oz" value={water} onChange={(e) => {if (isNumberOrEmpty(e.target.value))setWater(e.target.value)}} />
                     
                 </Stack>
                 
